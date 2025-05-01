@@ -1,0 +1,20 @@
+{
+  "name": "joh-piu-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio website for Joh Piu, showcasing a gallery, personal information, and contact details.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "portfolio",
+    "model",
+    "gallery",
+    "contact"
+  ],
+  "author": "Joh Piu",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
