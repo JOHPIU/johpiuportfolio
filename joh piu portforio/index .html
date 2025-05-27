@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joh Piu - Model Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('image/IMG_6141.JPG') no-repeat center center fixed;
+      background-size: cover;
+      color: #050000;
+    }
+    header.hero {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    .hero img {
+      width: 100px;
+      height: 100;
+      margin-left: auto;
+      border-radius: 50px;
+    }
+    .hero-text {
+      text-align: right;
+      margin-right: 2rem;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+    .social-icons {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .social-icons a {
+      color: #be1818;
+      margin-left: 10px;
+      font-size: 1.8rem;
+    }
+    section.about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      background: rgba(100, 2, 2, 0.849);
+    }
+    .about img {
+      width: 300px;
+      height: auto;
+      margin-right: 2rem;
+      border-radius: 10px;
+    }
+    .about-text {
+      max-width: 600px;
+      text-align: left;
+    }
+    .portfolio {
+      padding: 3rem;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .portfolio h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .categories button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background: #e91e63;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    .categories button:hover {
+      background: #470202;
+    }
+    .gallery {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .gallery.active {
+      display: flex;
+    }
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #720606;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/joh_piu/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@jabari_flora?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="hero-text">
+      <h1>Joh Piu</h1>
+      <p>Professional Model</p>
+      <p>Email: johpiu04@gmail.com | Phone: 0742512524</p>
+    </div>
+    <img src="image/about.JPG" alt="Joh Piu" />
+  </header>
+
+  <section class="about">
+    <img src="image/IMG_5777.jpg" alt="About Joh Piu" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hello! I'm Joh Piu, a passionate and professional model with experience in fashion, runway, commercial, and fitness shoots. I am creative, confident, and I love bringing stories to life through photography. I collaborate with photographers and brands to create impactful visuals that resonate with audiences.</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="categories">
+      <button onclick="showGallery('runway')">Runway</button>
+      <button onclick="showGallery('fitness')">Fitness</button>
+      <button onclick="showGallery('commercial')">Commercial</button>
+    </div>
+    <div id="runway" class="gallery">
+      <img src="image/r1.webp" alt="Runway 1">
+      <img src="image/r2.webp" alt="Runway 2">
+      <img src="image/R.webp" alt="Runway 3">
+      <img src="runway4.jpg" alt="Runway 4">
+      <img src="runway5.jpg" alt="Runway 5">
+      <img src="runway6.jpg" alt="Runway 6">
+      <img src="runway7.jpg" alt="Runway 7">
+      <img src="runway8.jpg" alt="Runway 8">
+      <img src="runway9.jpg" alt="Runway 9">
+      <img src="runway10.jpg" alt="Runway 10">
+    </div>
+    <div id="fitness" class="gallery">
+      <img src="image/f.webp" alt="Fitness 1">
+      <img src="image/f3.webp" alt="Fitness 2">
+      <img src="image/f1.webp" alt="Fitness 3">
+      <img src="image/g.webp" alt="Fitness 4">
+      <img src="image/f2.webp" alt="Fitness 5">
+      <img src="fitness6.jpg" alt="Fitness 6">
+      <img src="fitness7.jpg" alt="Fitness 7">
+      <img src="fitness8.jpg" alt="Fitness 8">
+      <img src="fitness9.jpg" alt="Fitness 9">
+      <img src="fitness10.jpg" alt="Fitness 10">
+    </div>
+    <div id="commercial" class="gallery">
+      <img src="image/cc.JPG" alt="Commercial 1">
+      <img src="image/c.JPG" alt="Commercial 2">
+      <img src="image/cmmrc2.JPG" alt="Commercial 3">
+      <img src="image/cmmc3.JPG" alt="Commercial 4">
+      <img src="image/cmmrcl.png" alt="Commercial 5">
+      <img src="commercial6.jpg" alt="Commercial 6">
+      <img src="commercial7.jpg" alt="Commercial 7">
+      <img src="commercial8.jpg" alt="Commercial 8">
+      <img src="commercial9.jpg" alt="Commercial 9">
+      <img src="commercial10.jpg" alt="Commercial 10">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Joh Piu | Contact: johpiu04@gmail.com | 0742512524</p>
+  </footer>
+
+  <script>
+    function showGallery(category) {
+      const galleries = document.querySelectorAll('.gallery');
+      galleries.forEach(gallery => gallery.classList.remove('active'));
+      document.getElementById(category).classList.add('active');
+    }
+  </script>
+</body>
+</html>
